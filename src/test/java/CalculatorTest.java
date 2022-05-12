@@ -5,7 +5,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CalculatorTest {
@@ -50,8 +49,11 @@ public class CalculatorTest {
         //given
         Calculator calculator = new Calculator(new Delimiter().pattern());
 
-        //when - then
-        assertThrows(RuntimeException.class, () -> calculator.sum(formula));
+        //when
+        Throwable thrown = catchThrowable(() -> calculator.sum(formula));
 
+        //then
+        assertThat(thrown)
+                .isInstanceOf(RuntimeException.class);
     }
 }

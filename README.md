@@ -24,3 +24,18 @@ git checkout main // 기본 브랜치가 main인 경우
 git checkout -b 브랜치이름
 ex) git checkout -b apply-feedback
 ```
+
+## 기능 구현 목록
+
+- View 출력 기능 []
+    - InputView []
+    - ResultView []
+- 경주에 출전할 자동차 등록 기능 []
+    - 자동차 이름 길이 제한 기능 [v]
+    - 등록된 자동차 출력 기능 []
+- 전진하는 기능 구현 []
+    - 랜덤 값 생성 기능 []
+    - 랜덤 값에 따른 자동차 전진 기능 []
+- 경주 결과 출력 []
+    - 경주 완료 전 [] 
+    - 경주 완료 후 []

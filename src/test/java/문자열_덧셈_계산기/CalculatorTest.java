@@ -1,5 +1,5 @@
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+package 문자열_덧셈_계산기;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;

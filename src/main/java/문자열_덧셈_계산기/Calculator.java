@@ -1,3 +1,5 @@
+package 문자열_덧셈_계산기;
+
 public class Calculator {
 
     private final String pattern;

@@ -1,5 +1,8 @@
+package 자동차_경주_게임;
+
 public class Car {
 
+    public static final int MAXIMUM_LENGTH = 5;
     private final String carName;
     private int position = 0;
 
@@ -17,13 +20,13 @@ public class Car {
     }
 
     private void validateNameLength(String carName) {
-        if (carName.length() > 5) {
+        if (carName.length() > MAXIMUM_LENGTH) {
             throw new IllegalArgumentException("자동차 이름은 5자를 초과할 수 없습니다.");
         }
     }
 
-    public void go() {
-        this.position++;
+    private String positionToString() {
+        return "-".repeat(this.position);
     }
 
 }

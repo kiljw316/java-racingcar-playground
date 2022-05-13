@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class RandomNumber {
 
+    public static final int BOUND = 10;
     private final Random random;
 
     public RandomNumber(Random random) {
@@ -11,7 +12,7 @@ public class RandomNumber {
     }
 
     public Boolean isGreaterThan(int conditionNum) {
-        int randomNum = random.nextInt(10);
+        int randomNum = random.nextInt(BOUND);
         return conditionNum <= randomNum;
     }
 }

@@ -19,6 +19,10 @@ public class Car {
         return carName;
     }
 
+    public void go() {
+        this.position++;
+    }
+
     private void validateNameLength(String carName) {
         if (carName.length() > MAXIMUM_LENGTH) {
             throw new IllegalArgumentException("자동차 이름은 5자를 초과할 수 없습니다.");
@@ -29,4 +33,8 @@ public class Car {
         return "-".repeat(this.position);
     }
 
+    @Override
+    public String toString() {
+        return carName + " : " + positionToString();
+    }
 }

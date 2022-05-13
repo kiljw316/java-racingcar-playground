@@ -22,9 +22,7 @@ public class RacingGame {
     public void run(int runCount) {
         resultView.playResultInit();
         for (int i = 0; i < runCount; i++) {
-            for (Car car : carList) {
-                carRunIfRandomNumberGreaterThanConditionNum(car);
-            }
+            carList.forEach(this::carRunIfRandomNumberGreaterThanConditionNum);
             resultView.playResult(carList);
         }
     }

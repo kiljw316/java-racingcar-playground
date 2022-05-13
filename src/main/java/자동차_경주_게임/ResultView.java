@@ -12,19 +12,15 @@ public class ResultView {
         System.out.println("시도할 횟수는 몇회인가요?");
     }
 
-    public void lineBreak() {
-        System.out.println();
-    }
-
     public void playResultInit() {
-        System.out.println("실행 결과");
+        System.out.println("\n실행 결과");
     }
 
     public void playResult(List<Car> carList) {
         for (Car car : carList) {
             System.out.println(car);
         }
-        lineBreak();
+        System.out.println();
     }
 
     public void finalResult(List<String> carNames) {

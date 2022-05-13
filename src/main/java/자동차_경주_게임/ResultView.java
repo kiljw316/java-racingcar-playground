@@ -26,4 +26,17 @@ public class ResultView {
         }
         lineBreak();
     }
+
+    public void finalResult(List<String> carNames) {
+        StringBuilder finalResult = new StringBuilder();
+        for (String carName : carNames.subList(0, carNames.size() - 1)) {
+            finalResult.append(carName);
+            finalResult.append(", ");
+        }
+
+        finalResult.append(carNames.get(carNames.size() - 1));
+        finalResult.append("가 최종 우승했습니다.");
+
+        System.out.println(finalResult);
+    }
 }

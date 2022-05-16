@@ -12,12 +12,10 @@ public class Application {
         ResultView resultView = new ResultView();
         InputView inputView = new InputView();
 
-        resultView.initCarNames();
         String carNames = inputView.initCarNames();
 
         RacingGame racingGame = new RacingGame(carNames, new RandomNumber(new Random()), resultView);
 
-        resultView.initRunCount();
         int runCount = inputView.initRunCount();
 
         racingGame.run(runCount);

@@ -20,4 +20,8 @@ public class Car {
     public void move() {
         this.position = position.forward();
     }
+
+    public String getCarName() {
+        return carName;
+    }
 }
